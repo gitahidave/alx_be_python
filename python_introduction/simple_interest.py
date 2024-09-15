@@ -13,4 +13,5 @@ time = 3
 #  'P' represents the principal
 #  'R' represents the rate
 #  'T' represents the time
-print("The simple interest is:", principal * rate * time)  
+interest = principal * rate * time
+print("The simple interest is:", interest)  
