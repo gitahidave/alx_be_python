@@ -9,45 +9,6 @@ def display_menu():
     print("3. View the list")
     print("4. Exit")
 
-def add_item(shopping_list):
-    """
-    Add an item to the shopping list.
-    
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
-    item = input("Enter the item to add: ").strip()
-    shopping_list.append(item)
-    print(f"'{item}' has been added to the list.")
-
-def remove_item(shopping_list):
-    """
-    Remove an item from the shopping list.
-    
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
-    item = input("Enter the item to remove: ").strip()
-    if item in shopping_list:
-        shopping_list.remove(item)
-        print(f"'{item}' has been removed from the list.")
-    else:
-        print(f"'{item}' not found in the shopping list.")
-
-def view_list(shopping_list):
-    """
-    Display the current shopping list.
-    
-    Parameters:
-    shopping_list (list): The current shopping list.
-    """
-    if not shopping_list:
-        print("The shopping list is empty.")
-    else:
-        print("\nCurrent Shopping List:")
-        for i, item in enumerate(shopping_list, start=1):
-            print(f"{i}. {item}")
-
 def main():
     shopping_list = []
     while True:
